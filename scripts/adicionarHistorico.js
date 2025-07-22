@@ -6,4 +6,4 @@ export function adicionarHistorico(expressao, resultado) {
         itemHistorico.textContent = `${expressao} = ${resultado}`;
         historico.appendChild(itemHistorico);
     }
-} 
+}

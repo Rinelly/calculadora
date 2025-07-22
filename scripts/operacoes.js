@@ -1,3 +1,5 @@
+import { adicionarHistorico } from './adicionarHistorico.js';
+
 export function adicionarCaracter(caracter) {
     const display = document.querySelector(".display");
     if (display) {
@@ -15,8 +17,10 @@ export function limpaTela() {
 export function calcular() {
     const display = document.querySelector(".display");
     if (display) {
+        const expressao = display.value;
         try {
             display.value = eval(display.value);
+            adicionarHistorico(expressao, display.value);
         } catch (e) {
             display.value = "Erro";
         }
