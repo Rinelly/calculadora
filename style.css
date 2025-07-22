@@ -160,10 +160,11 @@ button:active{
         font-size: 12px;
     }
 
-    .titulo
+    .titulo,
     .historico-section {
         width: 95%;
         max-width: 320px;
+        margin: 10px auto
     }
 
 }
