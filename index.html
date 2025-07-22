@@ -10,29 +10,33 @@
     <title>Calculadora</title>
 </head>
 <body>
+    <h1 class="titulo">Calculadora</h1>
     <div class="container">
         <input class="display">
-        <button class="gray-button" onclick="limpaTela()">AC</button>
-        <button class="gray-button" onclick="inverterSinal()">+/-</button>
-        <button class="blue-button" onclick="adicionarCaracter('/')">/</button>
-        <button class="blue-button" onclick="adicionarCaracter('*')">*</button>
-        <button class="black-button" onclick="adicionarCaracter('7')">7</button>
-        <button class="black-button" onclick="adicionarCaracter('8')">8</button>
-        <button class="black-button" onclick="adicionarCaracter('9')">9</button>
-        <button class="blue-button" onclick="adicionarCaracter('-')">-</button>
-        <button class="black-button" onclick="adicionarCaracter('4')">4</button>
-        <button class="black-button" onclick="adicionarCaracter('5')">5</button>
-        <button class="black-button" onclick="adicionarCaracter('6')">6</button>
-        <button class="blue-button" onclick="adicionarCaracter('+')">+</button>
-        <button class="black-button" onclick="adicionarCaracter('1')">1</button>
-        <button class="black-button" onclick="adicionarCaracter('2')">2</button>
-        <button class="black-button" onclick="adicionarCaracter('3')">3</button>
-        <button class="equal-button equal" onclick="calcular()">=</button>
-        <button class="black-button zero" onclick="adicionarCaracter('0')">0</button>
-        <button class="black-button" onclick="adicionarCaracter('.')">.</button>
+        <button data-acao="limpar" class="gray-button">AC</button>
+        <button data-acao="inverter" class="gray-button">+/-</button>
+        <button data-valor="/" class="blue-button">/</button>
+        <button data-valor="*" class="blue-button" >*</button>
+        <button data-valor="7" class="black-button">7</button>
+        <button data-valor="8" class="black-button">8</button>
+        <button data-valor="9" class="black-button">9</button>
+        <button data-valor="-" class="blue-button">-</button>
+        <button data-valor="4" class="black-button">4</button>
+        <button data-valor="5" class="black-button">5</button>
+        <button data-valor="6" class="black-button">6</button>
+        <button data-valor="+" class="blue-button">+</button>
+        <button data-valor="1" class="black-button">1</button>
+        <button data-valor="2" class="black-button">2</button>
+        <button data-valor="3" class="black-button">3</button>
+        <button data-acao="calcular" class="equal-button equal">=</button>
+        <button data-valor="0" class="black-button zero">0</button>
+        <button data-valor="." class="black-button">.</button>
     </div>
-    <script src="app.js"></script>
-    <script src="bloquearInput.js"></script>
+    <section class="historico-section">
+        <h2>Histórico</h2>
+        <ul id="historico"></ul>
+    </section>
+    <script type="module" src="scripts/app.js"></script>
 </body>
 
 </html>
