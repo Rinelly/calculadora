@@ -121,8 +121,8 @@ button:active{
 
 #historico {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 1cqmin;
+  margin: 10px;
   max-height: 150px;
   overflow-y: auto;
 }
