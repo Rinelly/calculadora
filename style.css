@@ -16,9 +16,25 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+.titulo {
+    width: 375px;
+    height: 80px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 39px;
+    background-color: #1e1e1e;
+    font-family: monospace;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    font-size: 36px;
+    color: #ff9800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container{
     background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
     border-radius: 39px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     height: 568px;
     width: 375px;
     display: grid;
@@ -82,4 +98,31 @@ button:active{
 .equal {
     grid-row: 6 / 8;
     grid-column: 4 / 5;
+}
+
+.historico-section {
+  width: 375px;
+  margin: 20px auto;
+  padding: 10px 15px;
+  border: 1px solid #333;
+  border-radius: 39px;
+  background-color: #1e1e1e;
+  color: #ccc;
+  font-family: monospace;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.historico-section h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ff9800;
+}
+
+#historico {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
 }
