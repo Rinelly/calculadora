@@ -1,4 +1,15 @@
-//Funcão para adicionar o evento de teclado para impedir a ação padrão
+/**
+ * @file bloquearInput.js
+ * @description Impede que o usuário digite ou cole valores diretamente no campo de exibição da calculadora, garantindo que apenas os botões sejam usados para entrada de dados. 
+ * @author Rinelly Vasconcelos
+ * @version 1.0.0
+ * @date jul/2025
+ */
+ 
+/**
+ * Adiciona eventos ao campo de display da calculadora para bloquear entradas via teclado e colagem de texto.
+ */
+
 export function bloquearInput() {
     // Impede a entrada de dados no campo de exibição
         const display = document.querySelector(".display");

@@ -1,3 +1,12 @@
+<!--
+==========================================
+Projeto: Calculadora - Javascript
+Autor: Rinelly Vasconcelos
+Descrição: Uma calculadora simples desenvolvida em Javascript,com funcionalidades básicas como adição, subtração,
+multiplicação e divisão, além de histórico de operações.
+Data: jul/2025
+==========================================
+-->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,8 +19,14 @@
     <title>Calculadora</title>
 </head>
 <body>
+    <!-- Título da Calculadora -->
     <h1 class="titulo">Calculadora</h1>
+    <!-- Container principal com display e botões -->
     <div class="container">
+        <!-- 
+        Os botões usam data-valor para indicar qual caractere será enviado ao display.
+        Botões com data-acao executam funções específicas: limpar, inverter, calcular.
+        -->
         <input class="display">
         <button data-acao="limpar" class="gray-button">AC</button>
         <button data-acao="inverter" class="gray-button">+/-</button>
@@ -32,11 +47,12 @@
         <button data-valor="0" class="black-button zero">0</button>
         <button data-valor="," class="black-button">,</button>
     </div>
+    <!-- Seção de histórico de operações -->
     <section class="historico-section">
         <h2>Histórico</h2>
         <ul id="historico"></ul>
     </section>
-   
+   <!-- Importa o script principal da calculadora -->
     <script type="module" src="scripts/app.js"></script>
 </body>
 

@@ -1,3 +1,14 @@
+/* 
+====================================================
+Projeto: Calculadora - Javascript
+Autor: Rinelly Vasconcelos
+Descrição: Estilos visuais da calculadora, incluindo 
+layout, botões, display, histórico e responsividade.
+Data: jul/2025
+====================================================
+*/
+
+/* === Reset e estilo base === */
 * {
     padding: 0;
     margin: 0;
@@ -5,8 +16,8 @@
     color: #FFFFFF;
 }
 
+/* === Corpo da página === */
 body {
-    /* background-color: #DAF0FF; */
     background-color: #fcdebd;
     height: 100vh;
     width: 100vw;
@@ -16,6 +27,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* === Título principal === */
+/* Centraliza o título da calculadora */
+/* Define tamanho, cor e estilo de fonte */
+/* Adiciona bordas, fundo e sombra para destaque */
+/* O título tem largura e altura fixas, com margem para espaçamento */
 .titulo {
     width: 375px;
     height: 80px;
@@ -31,6 +47,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* === Container principal === */
+/* Contém o display e os botões da calculadora */
+/* Utiliza grid para organizar os botões */
+/* O display ocupa a primeira linha e os botões são distribuídos em uma grade */
 .container{
     background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
     border-radius: 39px;
@@ -43,6 +64,9 @@ body {
     padding: 20px;
 }
 
+/* === Display da calculadora === */
+/* Exibe o resultado ou a expressão atual */
+/* Ocupa a primeira linha e as quatro primeiras colunas */
 .display {
     font-size: 48px;
     grid-column: 1 / 5;
@@ -56,7 +80,8 @@ body {
     caret-color: transparent; /* deixa o cursor invisível se por acaso focar */
     user-select: none; /* impede seleção do texto */
 }
-
+/* === Botões da calculadora === */
+/* Estilo base para todos os botões */
 button {
     font-size: 24px;
     border-radius: 16px;
@@ -92,14 +117,15 @@ button:active{
 }
 
 .zero {
-    grid-column: 1 / 3;
+    grid-column: 1 / 3; /* O botão zero ocupa as duas primeiras colunas */
 }
 
 .equal {
-    grid-row: 6 / 8;
+    grid-row: 6 / 8; /* O botão de igual ocupa a última linha */
     grid-column: 4 / 5;
 }
 
+/* === Histórico de operações === */
 .historico-section {
   width: 375px;
   margin: 20px auto;
@@ -121,12 +147,14 @@ button:active{
 
 #historico {
   list-style: none;
-  padding: 1cqmin;
+  padding: 10px;
   margin: 10px;
   max-height: 150px;
   overflow-y: auto;
 }
 
+/* === Responsividade === */
+/* Ajusta o layout e o tamanho dos elementos em telas menores */
 @media screen and (max-width: 480px){
     .container {
         width: 95%;
@@ -145,7 +173,8 @@ button:active{
     .gray-button {
         font-size: 18px;
         padding: 10px;
-}
+    }
+
     .equal-button.equal {
         font-size: 20px;
     }
@@ -164,7 +193,7 @@ button:active{
     .historico-section {
         width: 95%;
         max-width: 320px;
-        margin: 10px auto
+        margin: 10px auto;
     }
 
 }
