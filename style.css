@@ -126,3 +126,40 @@ button:active{
   max-height: 150px;
   overflow-y: auto;
 }
+
+@media screen and (max-width: 480px){
+    .container {
+        width: 95%;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .display {
+        font-size: 36px;
+        padding-top: 20px;
+    }
+
+    .black-button,
+    .blue-button,
+    .equal-button,
+    .gray-button {
+        font-size: 18px;
+        padding: 10px;
+}
+    .equal-button.equal {
+        font-size: 20px;
+    }
+
+    .titulo {
+        width: 90%;
+        font-size: 24px;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .historico-section {
+        font-size: 12px;
+        width: 90%;
+    }
+
+}
