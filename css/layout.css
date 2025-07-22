@@ -1,0 +1,42 @@
+/*
+Arquivo: layout.css
+Descrição: Define a estrutura principal da calculadora, incluindo o título e o container que envolve o display e os botões.
+*/
+
+/* === Título principal === */
+/* Centraliza o título da calculadora */
+/* Define tamanho, borda, cor de fundo e fonte do título */
+/* Utiliza flexbox para centralizar o texto */
+/* O título tem uma sombra para destaque */
+
+.titulo {
+    width: 375px;
+    height: 80px;
+    margin: 20px auto;
+    border: 1px solid #333;
+    border-radius: 39px;
+    background-color: #1e1e1e;
+    font-family: monospace;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    font-size: 36px;
+    color: #ff9800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === Container principal === */
+/* Contém o display e os botões da calculadora */
+/* Utiliza grid para organizar os botões */
+/* O display ocupa a primeira linha e os botões são distribuídos em uma grade */
+.container{
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+    border-radius: 39px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    height: 568px;
+    width: 375px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 20px;
+}

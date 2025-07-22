@@ -1,0 +1,20 @@
+/* 
+====================================================
+Projeto: Calculadora - Javascript
+Autor: Rinelly Vasconcelos
+Descrição: Estilos visuais da calculadora, incluindo 
+layout, botões, display, histórico e responsividade.
+Data: jul/2025
+====================================================
+*/
+
+@import url("base.css");
+@import url("layout.css");
+@import url("display.css");
+@import url("botoes.css");
+@import url("historico.css");
+@import url("responsivo.css");
+
+
+
+

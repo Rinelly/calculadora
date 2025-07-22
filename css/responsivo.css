@@ -1,0 +1,48 @@
+/*
+Arquivo: responsivo.css
+Descrição: Contém as regras de media queries para ajustar o layout da calculadora em dispositivos móveis.
+*/
+/* === Responsividade === */
+/* Ajusta o layout e o tamanho dos elementos em telas menores */
+@media screen and (max-width: 480px){
+    .container {
+        width: 95%;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .display {
+        font-size: 36px;
+        padding-top: 20px;
+    }
+
+    .black-button,
+    .blue-button,
+    .equal-button,
+    .gray-button {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .equal-button.equal {
+        font-size: 20px;
+    }
+
+    .titulo {
+        font-size: 24px;
+        height: auto;
+        padding: 10px;
+    }
+    
+    .historico-section {
+        font-size: 12px;
+    }
+
+    .titulo,
+    .historico-section {
+        width: 95%;
+        max-width: 320px;
+        margin: 10px auto;
+    }
+
+}

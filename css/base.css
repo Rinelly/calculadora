@@ -1,0 +1,22 @@
+/*
+Arquivo: base.css
+Descrição: Contém o reset de estilos e as configurações globais do corpo da página.
+*/
+/* === Reset e estilo base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+
+/* === Corpo da página === */
+body {
+  background-color: #fcdebd;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+}

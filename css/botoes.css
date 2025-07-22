@@ -1,0 +1,53 @@
+/*
+Arquivo: botoes.css
+Descrição: Define o estilo visual e comportamental dos botões da calculadora, incluindo cores, tamanhos, interações e posicionamento especial.
+*/
+
+/* === Botões da calculadora === */
+/* Estilo base para todos os botões */
+button {
+    font-size: 24px;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+/* Botões pretos (números e operadores comuns) */
+.black-button {
+    background-color: #303136;
+}
+
+/* Botões azuis (ex: botões especiais) */
+.blue-button {
+    background-color: #eb8634;
+}
+
+/* Botões cinza (ex: limpar, inverter) */
+.gray-button {
+    background-color: #616161;
+}
+
+/* Botão igual */
+.equal-button {
+    background-color: #e69655;
+    color: #fff;
+}
+
+.zero {
+    grid-column: 1 / 3; /* O botão zero ocupa as duas primeiras colunas */
+}
+
+/* O botão igual ocupa duas linhas (da 6 até a 8) e fica na última coluna */
+.equal {
+    grid-row: 6 / 8; 
+    grid-column: 4 / 5;
+}
